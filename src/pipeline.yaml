@@ -1,0 +1,25 @@
+tasks:
+
+- source: tasks/merge.py
+  product:
+    df: output/merge-df.csv
+    nb: output/merge.ipynb
+
+- source: tasks/eda.py
+  product:
+    nb: output/eda.ipynb
+
+- source: tasks/train-the-model.py
+  product:
+    model: output/train-the-model-model.pkl
+    test_df: output/train-the-model-test_df.pkl
+    nb: output/train-the-model.ipynb
+
+- source: tasks/test-the-model.py
+  product:
+    nb: output/test-the-model.ipynb
+
+- source: tasks/predict.py
+  product:
+    model: output/predict-model.pkl
+    nb: output/predict.ipynb
